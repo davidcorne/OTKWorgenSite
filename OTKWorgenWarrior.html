@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Hearthstone Worgen OTK Warrior Calculator</title>
+  </head>
+  <script src="OTKWorgenWarrior.js"></script>
+  <link rel="stylesheet" type="text/css" href="OTKWorgenWarrior.css">
+  <body onload="Worgen.calculate()">
+    <table>
+      <tr>
+        <th>Card</th>
+        <td>Raging Worgen</td>
+        <td>Charge</td>
+        <td>Inner Rage</td>
+        <td>Inner Rage</td>
+        <td>Cruel Taskmaster</td>
+        <td>Rampage</td>
+        <td>Rampage</td>
+        <td>Faceless Manipulator</td>
+      </tr>
+      <tr>
+        <th>In Hand?</th>
+        <td><input id="worgen" type="checkbox" onclick="return false" checked="yes"/></td>
+        <td><input id="charge" type="checkbox" onclick="return false" checked="yes"/></td>
+        <td><input id="inner_rage_1" type="checkbox" onclick="Worgen.calculate()" checked="yes"/></td>
+        <td><input id="inner_rage_2" type="checkbox" onclick="Worgen.calculate()" checked="yes"/></td>
+        <td><input id="cruel_taskmaster" type="checkbox" onclick="Worgen.calculate()" checked="yes"/></td>
+        <td><input id="rampage_1" type="checkbox" onclick="Worgen.calculate()" checked="yes"/></td>
+        <td><input id="rampage_2" type="checkbox" onclick="Worgen.calculate()"/></td>
+        <td><input id="faceless_manipulator" type="checkbox" onclick="Worgen.calculate()" checked="yes"/></td>
+      </tr>
+    </table>
+    <div class="output">
+      <div id="cost-label">Cost</div>
+      <div id="cost"></div>
+      <div id="damage-label">Damage</div>
+      <div id="damage"></div>
+      <div id="warning"><div>
+    </div>
+  </body>
+</html>
